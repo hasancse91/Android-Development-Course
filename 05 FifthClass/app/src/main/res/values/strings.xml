@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FifthClass</string>
+    <string name="button_text">Show IP</string>
+    <string name="sign_in_button_text">Sign In</string>
+    <string name="sign_in_hints">Hints: Valid user name is `user` and password is `123`</string>
+    <string name="ip_title_text">Your IP Address:</string>
+</resources>

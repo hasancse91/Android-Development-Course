@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="com.hellohasan.secondclass.Main2Activity">
+
+    <include
+        android:id="@+id/layout"
+        layout="@layout/my_layout"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Text from EditText"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"/>
+
+
+</android.support.constraint.ConstraintLayout>
