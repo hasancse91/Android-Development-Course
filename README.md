@@ -1,5 +1,6 @@
 # Android Development Course
-You'll find here step by step source code of Android App Development learning.
+
+I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see here for details course outlines: https://goo.gl/SP6yzk). I'll add all source codes of my training program is this repository. You'll find here step by step source code and topics of Android App Development training.
 
 ### [Class: 1](https://github.com/hasancse91/Android-Development-Course/tree/master/01-FirstClass)
  - ConstraintLayout
