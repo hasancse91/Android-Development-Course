@@ -4,28 +4,29 @@
   "movies": [
     {
       "name": "Me before You",
-      "director": "",
-      "image": "http://lorempixel.com/400/200/",
+      "director": "Thea Sharrock",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/me_before_you.jpg",
       "rank": 4,
       "type": "romantic"
     },
     {
       "name": "Shawshank Redemption",
-      "director": "",
-      "image": "http://lorempixel.com/400/200/",
+      "director": "Frank Darabont",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/shawshank_redemption.jpg",
       "rank": 2,
       "type": "drama"
     },
     {
       "name": "The Godfather",
-      "director": "",
-      "image": "http://lorempixel.com/400/200/",
+      "director": "Francis Ford Coppola",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/the_godfather.jpg",
       "rank": 1,
       "type": "crime"
     },
     {
       "name": "Forest Gump",
-      "image": "http://lorempixel.com/400/200/",
+      "director": "Robert Zemeckis",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/forrest_gump.jpg",
       "rank": 3,
       "type": "motivational"
     }
