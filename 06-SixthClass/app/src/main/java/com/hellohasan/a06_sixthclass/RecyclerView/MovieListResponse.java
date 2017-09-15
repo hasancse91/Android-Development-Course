@@ -3,7 +3,6 @@ package com.hellohasan.a06_sixthclass.RecyclerView;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
@@ -11,13 +10,10 @@ import java.util.List;
 public class MovieListResponse implements Parcelable {
 
     @SerializedName("success")
-    @Expose
     private Boolean success;
     @SerializedName("message")
-    @Expose
     private String message;
     @SerializedName("movies")
-    @Expose
     private List<Movie> movies = null;
     public final static Parcelable.Creator<MovieListResponse> CREATOR = new Creator<MovieListResponse>() {
 

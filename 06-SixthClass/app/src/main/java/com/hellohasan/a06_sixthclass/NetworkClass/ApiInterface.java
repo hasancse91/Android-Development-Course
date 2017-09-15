@@ -11,9 +11,3 @@ public interface ApiInterface {
     Call<MovieListResponse> getMovieList();
 
 }
-
-/*
-    @Part List<MultipartBody.Part> images
-    https://github.com/square/retrofit/issues/1776
-    https://stackoverflow.com/questions/39866676/retrofit-uploading-multiple-images-to-a-single-key
-*/
