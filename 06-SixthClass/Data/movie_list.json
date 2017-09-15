@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "message": "Data fetch successful",
+  "movies": [
+    {
+      "name": "Me before You",
+      "director": "",
+      "image": "http://lorempixel.com/400/200/",
+      "rank": 4,
+      "type": "romantic"
+    },
+    {
+      "name": "Shawshank Redemption",
+      "director": "",
+      "image": "http://lorempixel.com/400/200/",
+      "rank": 2,
+      "type": "drama"
+    },
+    {
+      "name": "The Godfather",
+      "director": "",
+      "image": "http://lorempixel.com/400/200/",
+      "rank": 1,
+      "type": "crime"
+    },
+    {
+      "name": "Forest Gump",
+      "image": "http://lorempixel.com/400/200/",
+      "rank": 3,
+      "type": "motivational"
+    }
+  ]
+}

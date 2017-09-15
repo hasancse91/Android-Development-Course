@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">06-SixthClass</string>
+    <string name="topic_list_title">Important Android Topics</string>
+
+    <string-array name="topic_list">
+        <item>TextView</item>
+        <item>Button</item>
+        <item>Toast</item>
+        <item>EditText</item>
+        <item>Constraint Layout</item>
+        <item>Linear Layout</item>
+        <item>Relative Layout</item>
+        <item>Alert Dialog</item>
+        <item>SharedPreference</item>
+        <item>Retrofit Network Library</item>
+        <item>ButterKnife Library</item>
+        <item>Picasso Library</item>
+        <item>Logger Library</item>
+        <item>Glide Library</item>
+        <item>JOSUP Library</item>
+        <item>ProGuard Rules</item>
+        <item>Dependency Injection</item>
+        <item>Text To Speech</item>
+        <item>Firebase Push Notification</item>
+        <item>CheckBox</item>
+        <item>RadioButton</item>
+        <item>Spinner</item>
+        <item>ListView</item>
+        <item>RecyclerView</item>
+        <item>CardView</item>
+        <item>WevView</item>
+        <item>Runtime permission</item>
+        <item>Intent</item>
+        <item>EventBus Library</item>
+    </string-array>
+
+</resources>
