@@ -5,5 +5,8 @@ Date: 26 August, 2017
 - `ButterKnife` Library to reduce boilerplate code
 - Phone call
 - Run time permission for phone call
-- Send a POST request to a PHP server and receive a response: https://hellohasan.com/2016/12/03/android-retrofit-get-post-method/
+- Send a POST request to a PHP server and receive a response
 - Update UI from another class using `interface`
+
+## Resource:
+- [Bengali blog post on `Retrofit`](https://hellohasan.com/2016/12/03/android-retrofit-get-post-method/)
