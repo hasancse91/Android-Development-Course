@@ -9,4 +9,5 @@ Date: 08 September, 2017
 - Use of `@OnClick` annotation of `ButterKnife` library to listen any button/view click event
 
 ### Resource ###
+- [Bengali Blog post on `Retrofit`](https://hellohasan.com/2016/12/03/android-retrofit-get-post-method/)
 - [Awesome Tutorial Blog posts on Retrofit](https://futurestud.io/tutorials/tag/retrofit/)
