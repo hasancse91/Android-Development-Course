@@ -45,7 +45,7 @@ You'll find here step by step source code of Android App Development learning.
 - Use of `@OnClick` annotation of `ButterKnife` library to listen any button/view click event
 - *[Check these awesome blog posts on Retrofit](https://futurestud.io/tutorials/tag/retrofit/)*
 
-### [Class: 6[(https://github.com/hasancse91/Android-Development-Course/tree/master/06-SixthClass)
+### [Class: 6](https://github.com/hasancse91/Android-Development-Course/tree/master/06-SixthClass)
 - ListView - a static string list from `<string-array>` of `string.xml`
 - ListView - item click event listen
 - ListView - item long click event listen
