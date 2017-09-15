@@ -9,4 +9,4 @@ Date: 15 September, 2017
 - POJO to JSON covert using Gson Library and print in Log
 
 ### Resource ###
-- [Bengali Blog post `RecyclerView` and `CardView`](https://hellohasan.com/2017/02/20/android-cardview-recyclerview-bengali-tutorial/)
+- [Bengali Blog post on `RecyclerView` and `CardView`](https://hellohasan.com/2017/02/20/android-cardview-recyclerview-bengali-tutorial/)
