@@ -1,5 +1,6 @@
 package com.hellohasan.a06_sixthclass.ListView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.hellohasan.a06_sixthclass.R;
 import com.hellohasan.a06_sixthclass.RecyclerView.Movie;
+import com.hellohasan.a06_sixthclass.RecyclerView.MovieListActivity;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -68,5 +70,9 @@ public class AndroidTopicListActivity extends AppCompatActivity {
         Movie movie1 = gson.fromJson(movieJson, Movie.class);
 
         Logger.json(movieJson);
+    }
+
+    public void showMovieList(View view) {
+        startActivity(new Intent(this, MovieListActivity.class));
     }
 }

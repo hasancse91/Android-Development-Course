@@ -35,7 +35,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder>{
                 .into(holder.imageView);
 
         holder.movieNameTextView.setText(movie.getName());
-        holder.movieRank.setText(movie.getRank());
+        holder.movieRank.setText(String.valueOf(movie.getRank()));
 
     }
 
