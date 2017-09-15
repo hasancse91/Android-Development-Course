@@ -10,7 +10,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:src="@mipmap/ic_launcher_round"/>
+        android:src="@mipmap/ic_launcher_round"
+        android:scaleType="centerCrop"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,5 +41,12 @@
             tools:text="5"
             android:layout_marginRight="8dp"/>
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/list_item_selector"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"/>
 
 </LinearLayout>

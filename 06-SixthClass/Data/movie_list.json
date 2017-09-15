@@ -3,9 +3,9 @@
   "message": "Data fetch successful",
   "movies": [
     {
-      "name": "Me before You",
-      "director": "Thea Sharrock",
-      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/me_before_you.jpg",
+      "name": "Life Of Pi",
+      "director": "Ang Lee",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/life_of_pi.jpg",
       "rank": 4,
       "type": "romantic"
     },
