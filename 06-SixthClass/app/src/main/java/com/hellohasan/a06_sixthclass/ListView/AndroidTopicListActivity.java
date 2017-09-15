@@ -8,7 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.hellohasan.a06_sixthclass.R;
+import com.hellohasan.a06_sixthclass.RecyclerView.Movie;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,5 +47,26 @@ public class AndroidTopicListActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+
+
+
+
+        Logger.addLogAdapter(new AndroidLogAdapter());
+
+        Movie movie = new Movie();
+        movie.setDirector("Adamn");
+        movie.setImage("imageUrl");
+        movie.setName("Shawshank Redumntion");
+        movie.setRank(8);
+        movie.setType("drama");
+
+        Gson gson = new Gson();
+
+        String movieJson = gson.toJson(movie, Movie.class);
+
+        Movie movie1 = gson.fromJson(movieJson, Movie.class);
+
+        Logger.json(movieJson);
     }
 }

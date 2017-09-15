@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">06-SixthClass</string>
     <string name="topic_list_title">Important Android Topics</string>
+    <string name="movie_rank_title">Rank: </string>
 
     <string-array name="topic_list">
         <item>TextView</item>
