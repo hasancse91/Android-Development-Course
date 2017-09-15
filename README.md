@@ -44,3 +44,12 @@ You'll find here step by step source code of Android App Development learning.
 - Use of mention string resources in `string.xml` file instead of hardcoded text
 - Use of `@OnClick` annotation of `ButterKnife` library to listen any button/view click event
 - *[Check these awesome blog posts on Retrofit](https://futurestud.io/tutorials/tag/retrofit/)*
+
+### [Class: 6[(https://github.com/hasancse91/Android-Development-Course/tree/master/06-SixthClass)
+- ListView - a static string list from `<string-array>` of `string.xml`
+- ListView - item click event listen
+- ListView - item long click event listen
+- RecyclerView - show a movie list with image (using `Picasso` Library). Data will come from server using [`Retrofit`](https://github.com/hasancse91/Android-Development-Course/tree/master/05-FifthClass)
+- POJO to JSON covert using Gson Library and print in Log
+- *[Check this Bengali Blog post for `RecyclerView` and `CardView`]*(https://hellohasan.com/2017/02/20/android-cardview-recyclerview-bengali-tutorial/)
+
