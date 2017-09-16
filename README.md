@@ -47,7 +47,7 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - *[Check these awesome blog posts on Retrofit](https://futurestud.io/tutorials/tag/retrofit/)*
 
 ### [Class: 6](https://github.com/hasancse91/Android-Development-Course/tree/master/06-SixthClass)
-- ListView - a static string list from `<string-array>` of `string.xml`
+- ListView - show a static string list from `<string-array>` of `string.xml`
 - ListView - item click event listen
 - ListView - item long click event listen
 - RecyclerView - show a movie list with image (using `Picasso` Library). Data will come from server using [`Retrofit`](https://github.com/hasancse91/Android-Development-Course/tree/master/05-FifthClass)
