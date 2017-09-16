@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hellohasan.seventhclass.ShowMovieDetails.MovieDetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movieImageView"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Forest Gump"
+            app:layout_constraintTop_toBottomOf="@id/movieImageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/directorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direction_name"
+            app:layout_constraintTop_toBottomOf="@+id/movieName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/directorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/movieName"
+            app:layout_constraintLeft_toRightOf="@+id/directorTitle"
+            tools:text="Adam Smith"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/movieTypeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_type_title"
+            app:layout_constraintTop_toBottomOf="@+id/directorTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/movieTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/directorTitle"
+            app:layout_constraintLeft_toRightOf="@+id/movieTypeTitle"
+            tools:text="Adventure"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ratingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_title"
+            app:layout_constraintTop_toBottomOf="@+id/movieTypeTextView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/movieTypeTextView"
+            app:layout_constraintLeft_toRightOf="@id/ratingTitle"
+            tools:text="8"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/plotTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_plot_title"
+            app:layout_constraintTop_toBottomOf="@+id/ratingTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/plotTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/ratingTitle"
+            app:layout_constraintLeft_toRightOf="@+id/plotTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:text="@string/movie_plot"
+            android:padding="8dp"
+            android:textSize="16sp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

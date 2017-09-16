@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp"
-    tools:context="com.hellohasan.sixthclass.ListView.AndroidTopicListActivity">
+    tools:context="com.hellohasan.seventhclass.ListView.AndroidTopicListActivity">
 
     <TextView
         android:id="@+id/list_title"

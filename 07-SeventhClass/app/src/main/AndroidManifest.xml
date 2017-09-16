@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hellohasan.sixthclass">
+    package="com.hellohasan.seventhclass">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -11,14 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.hellohasan.sixthclass.ListView.AndroidTopicListActivity">
+        <activity android:name=".ListView.AndroidTopicListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.hellohasan.sixthclass.RecyclerView.MovieListActivity"></activity>
+        <activity android:name=".RecyclerView.MovieListActivity" />
+        <activity android:name=".ShowMovieDetails.MovieDetailsActivity"></activity>
     </application>
 
 </manifest>

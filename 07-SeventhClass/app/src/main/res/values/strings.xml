@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">07-SeventhClass</string>
+
+    <string name="topic_list_title">Important Android Topics</string>
+    <string name="movie_rank_title">Rank: </string>
+    <string name="movie_button_text">Show Movie List</string>
+    <string name="direction_name">Director: </string>
+    <string name="movie_type_title">Movie Type: </string>
+    <string name="movie_plot_title">Plot: </string>
+    <string name="movie_plot">Slow-witted Forrest Gump (Tom Hanks) has never thought of himself as disadvantaged, and thanks to his supportive mother (Sally Field), he leads anything but a restricted life. Whether dominating on the gridiron as a college football star, fighting in Vietnam or captaining a shrimp boat, Forrest inspires people with his childlike optimism. But one person Forrest cares about most may be the most difficult to save -- his childhood love, the sweet but troubled Jenny (Robin Wright).</string>
+    <string name="movie_name_title">Movie Name: </string>
+    <string name="rating_title">Rating: </string>
+
+    <string-array name="topic_list">
+        <item>TextView</item>
+        <item>Button</item>
+        <item>Toast</item>
+        <item>EditText</item>
+        <item>Constraint Layout</item>
+        <item>Linear Layout</item>
+        <item>Relative Layout</item>
+        <item>Alert Dialog</item>
+        <item>SharedPreference</item>
+        <item>Retrofit Network Library</item>
+        <item>ButterKnife Library</item>
+        <item>Picasso Library</item>
+        <item>Logger Library</item>
+        <item>Glide Library</item>
+        <item>JOSUP Library</item>
+        <item>ProGuard Rules</item>
+        <item>Dependency Injection</item>
+        <item>Text To Speech</item>
+        <item>Firebase Push Notification</item>
+        <item>CheckBox</item>
+        <item>RadioButton</item>
+        <item>Spinner</item>
+        <item>ListView</item>
+        <item>RecyclerView</item>
+        <item>CardView</item>
+        <item>WevView</item>
+        <item>Runtime permission</item>
+        <item>Intent</item>
+        <item>EventBus Library</item>
+    </string-array>
+
+</resources>
