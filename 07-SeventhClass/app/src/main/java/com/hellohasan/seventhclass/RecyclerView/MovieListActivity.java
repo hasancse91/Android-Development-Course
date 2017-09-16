@@ -2,18 +2,19 @@ package com.hellohasan.seventhclass.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.hellohasan.seventhclass.NetworkClass.ApiInterface;
 import com.hellohasan.seventhclass.NetworkClass.RetrofitApiClient;
 import com.hellohasan.seventhclass.R;
+import com.hellohasan.seventhclass.Utils.Util;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -31,6 +32,7 @@ public class MovieListActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     private RecyclerViewAdapter recyclerViewAdapter;
     private ProgressDialog progressDialog;
+    private boolean doubleBackToExitPressedOnce = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,22 +40,30 @@ public class MovieListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_list);
         ButterKnife.bind(this);
         Logger.addLogAdapter(new AndroidLogAdapter());
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Loading");
         progressDialog.setMessage("Movie list loading from server. Please wait...");
 
-        //Send GET request to server to fetch movie list AND load them into RecyclerView
-        progressDialog.show();
-        getMovieListFromServer();
+        if(Util.isInternetAvailable(this)){
+            //Send GET request to server to fetch movie list AND load them into RecyclerView
+            progressDialog.show();
+            getMovieListFromServer();
+        } else
+            Toast.makeText(this, "Check your internet", Toast.LENGTH_LONG).show();
+
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                //when use pull to refresh
+                //when internet is available and user pull to refresh
                 //Send GET request to server to fetch movie list AND load them into RecyclerView
-                getMovieListFromServer();
+                if(Util.isInternetAvailable(getApplicationContext()))
+                    getMovieListFromServer();
+                else {
+                    swipeRefreshLayout.setRefreshing(false);
+                    Toast.makeText(getApplicationContext(), "Check your internet", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -104,15 +114,23 @@ public class MovieListActivity extends AppCompatActivity {
 
     }
 
+    //Call this method when user click on device's back button
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
+    public void onBackPressed() {
+        if (doubleBackToExitPressedOnce) {
+            super.onBackPressed();
+            return;
         }
 
-        return super.onOptionsItemSelected(item);
+        this.doubleBackToExitPressedOnce = true;
+        Toast.makeText(this, "Click BACK again to exit", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                doubleBackToExitPressedOnce=false;
+            }
+        }, 2000);
     }
 }

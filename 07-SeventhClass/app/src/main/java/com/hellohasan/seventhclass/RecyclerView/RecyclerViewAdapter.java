@@ -41,7 +41,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
                 .into(holder.imageView);
 
         holder.movieNameTextView.setText(movie.getName());
-        holder.movieRank.setText(String.valueOf(movie.getRank()));
+        holder.movieRank.setText(String.valueOf(movie.getRating()));
 
         holder.movieNameTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +53,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Item: " + movie.getName(), Toast.LENGTH_LONG).show();
-
                 Intent intent = new Intent(holder.linearLayout.getContext(), MovieDetailsActivity.class);
                 intent.putExtra(Config.MOVIE, movie);
                 view.getContext().startActivity(intent);

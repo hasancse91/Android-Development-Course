@@ -7,6 +7,6 @@ Date: 16 September, 2017
 - `RecyclerView` will be refreshable using `SwipeRefreshLayout`
 - Check network state (is internet available) using `ConnectivityManager` and `NetworkInfo` classes before any network call
 - Show `ProgressDialog` when first time call to network for movie list
-- Pass `Movie Object` from `MovieListActivity` to `MovieDetailsActivity` using `Intent` and show the `Movie` data in `MovieDetailsActivity`
+- Pass *Movie Object* from `MovieListActivity` to `MovieDetailsActivity` using `Intent` and show the `Movie` data in `MovieDetailsActivity`
 - Enable back button on `ActionBar` of `MovieDetailsActivity`
-- Enable `Click Again to Exit` feature in `MovieListActivity` when device's back button pressed
+- Enable **Click Again to Exit** feature in `MovieListActivity` when device's back button pressed

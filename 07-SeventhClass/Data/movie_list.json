@@ -5,7 +5,7 @@
     {
       "name": "Life Of Pi",
       "director": "Ang Lee",
-      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/life_of_pi.jpg",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/07-SeventhClass/Data/life_of_pi.jpg",
       "rating": 8,
       "type": "adventure",
       "plot": "After deciding to sell their zoo in India and move to Canada, Santosh and Gita Patel board a freighter with their sons and a few remaining animals. Tragedy strikes when a terrible storm sinks the ship, leaving the Patels' teenage son, Pi (Suraj Sharma), as the only human survivor. However, Pi is not alone; a fearsome Bengal tiger has also found refuge aboard the lifeboat. As days turn into weeks and weeks drag into months, Pi and the tiger must learn to trust each other if both are to survive."
@@ -13,7 +13,7 @@
     {
       "name": "Shawshank Redemption",
       "director": "Frank Darabont",
-      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/shawshank_redemption.jpg",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/07-SeventhClass/Data/shawshank_redemption.jpg",
       "rating": 9,
       "type": "drama",
       "plot": "Andy Dufresne (Tim Robbins) is sentenced to two consecutive life terms in prison for the murders of his wife and her lover and is sentenced to a tough prison. However, only Andy knows he didn't commit the crimes. While there, he forms a friendship with Red (Morgan Freeman), experiences brutality of prison life, adapts, helps the warden, etc., all in 19 years."
@@ -21,7 +21,7 @@
     {
       "name": "The Godfather",
       "director": "Francis Ford Coppola",
-      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/the_godfather.jpg",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/07-SeventhClass/Data/the_godfather.jpg",
       "rating": 10,
       "type": "crime",
       "plot": "Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel of the same name, focuses on the powerful Italian-American crime family of Don Vito Corleone (Marlon Brando). When the don's youngest son, Michael (Al Pacino), reluctantly joins the Mafia, he becomes involved in the inevitable cycle of violence and betrayal. Although Michael tries to maintain a normal relationship with his wife, Kay (Diane Keaton), he is drawn deeper into the family business."
@@ -29,7 +29,7 @@
     {
       "name": "Forest Gump",
       "director": "Robert Zemeckis",
-      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/forrest_gump.jpg",
+      "image": "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/07-SeventhClass/Data/forrest_gump.jpg",
       "rating": 8,
       "type": "motivational",
       "plot": "Slow-witted Forrest Gump (Tom Hanks) has never thought of himself as disadvantaged, and thanks to his supportive mother (Sally Field), he leads anything but a restricted life. Whether dominating on the gridiron as a college football star, fighting in Vietnam or captaining a shrimp boat, Forrest inspires people with his childlike optimism. But one person Forrest cares about most may be the most difficult to save -- his childhood love, the sweet but troubled Jenny (Robin Wright)."

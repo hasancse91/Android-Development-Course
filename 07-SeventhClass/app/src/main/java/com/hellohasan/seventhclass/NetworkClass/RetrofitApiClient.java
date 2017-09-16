@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitApiClient {
 
-    private static final String BASE_URL = "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/06-SixthClass/Data/"; //54.255.242.140
+    private static final String BASE_URL = "https://raw.githubusercontent.com/hasancse91/Android-Development-Course/master/07-SeventhClass/Data/";
 
     private static Retrofit retrofit = null;
 

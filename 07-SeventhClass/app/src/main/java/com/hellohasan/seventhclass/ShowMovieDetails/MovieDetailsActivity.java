@@ -1,16 +1,18 @@
 package com.hellohasan.seventhclass.ShowMovieDetails;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.hellohasan.seventhclass.Utils.Config;
 import com.hellohasan.seventhclass.R;
 import com.hellohasan.seventhclass.RecyclerView.Movie;
+import com.hellohasan.seventhclass.Utils.Config;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -36,6 +38,7 @@ public class MovieDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_details);
         ButterKnife.bind(this);
         Logger.addLogAdapter(new AndroidLogAdapter());
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Movie movie = getIntent().getParcelableExtra(Config.MOVIE);
 
@@ -48,8 +51,26 @@ public class MovieDetailsActivity extends AppCompatActivity {
         Logger.json(movieJson);
         //End of log message print
 
+        Picasso.with(this)
+                .load(movie.getImage())
+                .into(imageView);
 
+        movieNameTextView.setText(movie.getName());
+        directorNameTextView.setText(movie.getDirector());
+        movieTypeTextView.setText(movie.getType());
+        ratingTextView.setText(String.valueOf(movie.getRating()));
+        plotTextView.setText(movie.getPlot());
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
+        switch (item.getItemId()){
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
