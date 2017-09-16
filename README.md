@@ -54,3 +54,12 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - POJO to JSON covert using Gson Library and print in Log
 - [*Check this Bengali Blog post for `RecyclerView` and `CardView`*](https://hellohasan.com/2017/02/20/android-cardview-recyclerview-bengali-tutorial/)
 
+### [Class: 7](https://github.com/hasancse91/Android-Development-Course/tree/master/07-SeventhClass)
+- `RecyclerView` - show a movie list with image (using `Picasso` Library). Data will come from server using [`Retrofit`](https://github.com/hasancse91/Android-Development-Course/tree/master/05-FifthClass)
+- `RecyclerView` - item click event listen (listen every component click event of the `RecyclerView` item)
+- `RecyclerView` will be refreshable using `SwipeRefreshLayout`
+- Check network state (is internet available) using `ConnectivityManager` and `NetworkInfo` classes before any network call
+- Show `ProgressDialog` when first time call to network for movie list
+- Pass *Movie Object* from `MovieListActivity` to `MovieDetailsActivity` using `Intent` and show the `Movie` data in `MovieDetailsActivity`
+- Enable back button on `ActionBar` of `MovieDetailsActivity`
+- Enable **Click Again to Exit** feature in `MovieListActivity` when device's back button pressed
