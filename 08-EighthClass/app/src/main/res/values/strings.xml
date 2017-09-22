@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">08-EighthClass</string>
+    <string name="message">Check log cat from Android Monitor to understand Android Activity Lifecycle states by log message</string>
+</resources>
