@@ -69,7 +69,8 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - Use of `dimen` value for widget's height-width or padding-margin instead of hardcoded `dp` value
 - Use different `xml layout` for responsive UI
 - `AlertDialog` to show a pop up dialog
-**Resources: **
+
+**Resources:**
 - [Android Activity Lifecycle - Android official documentation](https://developer.android.com/guide/components/activities/activity-lifecycle.html)
 - [Activity Lifecycle - Tutorials Point](https://www.javatpoint.com/android-life-cycle-of-activity)
 - [Dimension](https://developer.android.com/guide/topics/resources/more-resources.html#Dimension)
