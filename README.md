@@ -83,4 +83,7 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - Web scraping using JSOUP library
 - `ProgressBar`
 
-**Resources:** [Bengali Blog Post on JSOUP Library](https://hellohasan.com/2017/02/25/android-web-scraping-jsoup/)
+**Resources:**
+- [Bengali Blog Post on JSOUP Library](https://hellohasan.com/2017/02/25/android-web-scraping-jsoup/)
+- [Android working with Camera - AndroidHive](https://www.androidhive.info/2013/09/android-working-with-camera-api/)
+- [Android Uploading Camera Image, Video to Server with Progress Bar - AndroidHive](https://www.androidhive.info/2014/12/android-uploading-camera-image-video-to-server-with-progress-bar/)
