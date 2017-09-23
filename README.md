@@ -77,3 +77,10 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - [Managing Screen Sizes](https://android-developers.googleblog.com/2011/07/new-tools-for-managing-screen-sizes.html)
 - [Different values folder for different screens](https://stackoverflow.com/a/32861248/6200296)
 - [Supporting Different Screen Sizes - Android official documentation](https://developer.android.com/training/multiscreen/screensizes.html)
+
+### [Class: 9](https://github.com/hasancse91/Android-Development-Course/tree/master/09-NinthClass)
+- Capture image using default camera App of device
+- Web scraping using JSOUP library
+- `ProgressBar`
+
+**Resources:** [Bengali Blog Post on JSOUP Library](https://hellohasan.com/2017/02/25/android-web-scraping-jsoup/)

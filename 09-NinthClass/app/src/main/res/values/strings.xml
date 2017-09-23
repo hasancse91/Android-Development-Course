@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">09-NinthClass</string>
+    <string name="error_message">Something wrong! Can\'t parse HTML</string>
+</resources>
