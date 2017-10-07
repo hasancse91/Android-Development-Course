@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/userProfilePic"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_image_black" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfilePic"
+        tools:text="John Doe" />
+
+    <TextView
+        android:id="@+id/companyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="Inovio Dhaka"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/companyTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="Dhaka, Bangladesh"/>
+
+    <TextView
+        android:id="@+id/bioTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/locationTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        tools:text="This is bio of GitHub User. This can be a large text. Can be multiple lines. Depends on user input."/>
+
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bioTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:text="Email: "
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/emailTitle"
+        app:layout_constraintLeft_toRightOf="@id/emailTitle"
+        tools:text="john@example.com"/>
+
+    <TextView
+        android:id="@+id/blogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:text="Blog: "/>
+
+    <TextView
+        android:id="@+id/blogTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/blogTitle"
+        app:layout_constraintLeft_toRightOf="@id/blogTitle"
+        tools:text="johnsblog.com"/>
+
+    <TextView
+        android:id="@+id/repoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/blogTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:text="Public Repository: " />
+
+    <TextView
+        android:id="@+id/repoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/repoTitle"
+        app:layout_constraintLeft_toRightOf="@id/repoTitle"
+        tools:text="27"/>
+
+    <TextView
+        android:id="@+id/followersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/repoTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:text="Followers: "/>
+
+    <TextView
+        android:id="@+id/followersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/followersTitle"
+        app:layout_constraintLeft_toRightOf="@id/followersTitle"
+        tools:text="213"/>
+
+    <TextView
+        android:id="@+id/accountCreatedTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/followersTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:text="Account Created At: " />
+
+    <TextView
+        android:id="@+id/accountCreatedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/accountCreatedTitle"
+        app:layout_constraintLeft_toRightOf="@id/accountCreatedTitle"
+        tools:text="04 March, 2013"/>
+
+    <TextView
+        android:id="@+id/accountLastUpdateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/accountCreatedTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textStyle="bold"
+        android:text="Account Last Updated At:"/>
+
+    <TextView
+        android:id="@+id/accountLastUpdateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/accountLastUpdateTitle"
+        app:layout_constraintLeft_toRightOf="@id/accountLastUpdateTitle"
+        tools:text="07 October, 2017"/>
+
+</android.support.constraint.ConstraintLayout>
