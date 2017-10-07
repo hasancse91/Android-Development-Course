@@ -1,12 +1,19 @@
-# Android Ninja - Class No: 9
-Date: 23 September, 2017
+# Android Ninja - Class No: 10
+Date: 06 October, 2017
 
 ## Topics ##
-- Capture image using default camera App of device
-- Web scraping using JSOUP library
-- `ProgressBar`
+- Implement an Abstraction Layer for Retrofit Network call
+- Android debugging
+- Refactor/rename (class, variable, method etc.)
+- Rename Android unique package name
+- Change Launcher Icon of Android App
+- Some Android Studio keyboard shortcuts
 
 ### Resources ###
-- [Bengali Blog Post on JSOUP Library](https://hellohasan.com/2017/02/25/android-web-scraping-jsoup/)
-- [Android working with Camera - AndroidHive](https://www.androidhive.info/2013/09/android-working-with-camera-api/)
-- [Android Uploading Camera Image, Video to Server with Progress Bar - AndroidHive](https://www.androidhive.info/2014/12/android-uploading-camera-image-video-to-server-with-progress-bar/)
+- [Bengali Blog Post on ***Abstraction in network layer using Retrofit***](https://hellohasan.com/2017/10/01/android-retrofit-get-post-method-different-network-layer/)
+- [Debug your App - Android Official Documentation](https://developer.android.com/studio/debug/index.html)
+- [Refactor/rename file in Android Studio](https://stackoverflow.com/a/28269008/6200296)
+- [Refactor your code in Android Studio - OneTouchCode](http://onetouchcode.com/2016/10/12/code-refactor-android-studio/)
+- [Rename package in Android Studio](https://stackoverflow.com/a/29092698/6200296)
+- [Change Launcher icon](https://stackoverflow.com/a/21385148/6200296)
+- [Android Studio Keyboard Shortcuts - Android Official Documentation](https://developer.android.com/studio/intro/keyboard-shortcuts.html)

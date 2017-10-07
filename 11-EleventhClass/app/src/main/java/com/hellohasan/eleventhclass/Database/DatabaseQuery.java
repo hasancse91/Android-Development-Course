@@ -3,6 +3,7 @@ package com.hellohasan.eleventhclass.Database;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.widget.Toast;
@@ -63,13 +64,13 @@ public class DatabaseQuery {
                 if(cursor.moveToFirst()){
                     studentList = new ArrayList<>();
                     do {
+                        long id = cursor.getLong(cursor.getColumnIndex(Config.COLUMN_STUDENT_ID));
                         String name = cursor.getString(cursor.getColumnIndex(Config.COLUMN_STUDENT_NAME));
                         long registrationNumber = cursor.getLong(cursor.getColumnIndex(Config.COLUMN_STUDENT_REGISTRATION));
                         String phone = cursor.getString(cursor.getColumnIndex(Config.COLUMN_STUDENT_PHONE));
                         String email = cursor.getString(cursor.getColumnIndex(Config.COLUMN_STUDENT_EMAIL));
-                        studentList.add(new Student(name, registrationNumber, phone, email));
+                        studentList.add(new Student(id, name, registrationNumber, phone, email));
                     }   while (cursor.moveToNext());
-
 
                 }
         } catch (Exception e){
@@ -82,5 +83,15 @@ public class DatabaseQuery {
         }
 
         return studentList;
+    }
+
+    public long getStudentCount(){
+        DatabaseHelper databaseHelper = DatabaseHelper.getInstance(context);
+        SQLiteDatabase sqLiteDatabase = databaseHelper.getReadableDatabase();
+
+        long count  = DatabaseUtils.queryNumEntries(sqLiteDatabase, Config.TABLE_STUDENT);
+        sqLiteDatabase.close();
+
+        return count;
     }
 }

@@ -1,6 +1,7 @@
 package com.hellohasan.eleventhclass.StudentCreate;
 
 public class Student {
+    private long id;
     private String name;
     private long registrationNumber;
     private String phoneNumber;
@@ -13,9 +14,20 @@ public class Student {
         this.email = email;
     }
 
-    public Student(String name, long registrationNumber) {
+    public Student(long id, String name, long registrationNumber, String phoneNumber, String email) {
+        this.id = id;
         this.name = name;
         this.registrationNumber = registrationNumber;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {

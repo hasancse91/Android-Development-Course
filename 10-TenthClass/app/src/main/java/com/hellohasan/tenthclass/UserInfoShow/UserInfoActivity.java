@@ -62,7 +62,7 @@ public class UserInfoActivity extends AppCompatActivity implements ResponseCallb
     }
 
     @OnClick(R.id.seeRepoButton)
-    public void getUserInfo() {
+    public void getRepositoryList() {
 
         String userId = userIdEditText.getText().toString();
 

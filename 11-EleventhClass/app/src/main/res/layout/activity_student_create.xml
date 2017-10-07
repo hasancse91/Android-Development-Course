@@ -6,13 +6,37 @@
     android:layout_height="match_parent"
     tools:context="com.hellohasan.eleventhclass.StudentCreate.StudentCreateActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/addStudentButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Add Student to DB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="addEntryToDatabase"/>
+
+    <TextView
+        android:id="@+id/studentCountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addStudentButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/studentCountTextView"
+        android:text="Number of Student: "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/studentCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addStudentButton"
+        app:layout_constraintLeft_toRightOf="@id/studentCountTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp"
+        tools:text="12"/>
 
 </android.support.constraint.ConstraintLayout>
