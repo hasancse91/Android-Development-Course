@@ -49,5 +49,7 @@ public class RepositoryListActivity extends AppCompatActivity {
                 dataTextView.setText(th.getMessage());
             }
         });
+
     }
+
 }

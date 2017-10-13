@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hellohasan.tenthclass.Network.GitHubApiService;
-import com.hellohasan.tenthclass.Network.NetworkCall;
+import com.hellohasan.tenthclass.Network.NetworkCallMock;
 import com.hellohasan.tenthclass.Network.ResponseCallback;
 import com.hellohasan.tenthclass.R;
 import com.hellohasan.tenthclass.RepositoryListShow.RepositoryListActivity;
@@ -53,11 +53,11 @@ public class UserInfoActivity extends AppCompatActivity implements ResponseCallb
     }
 
     @OnClick(R.id.getUserButton)
-    public void seeRepositories() {
+    public void getUserInformation() {
         progressBar.setVisibility(View.VISIBLE);
         errorMessageTextView.setVisibility(View.GONE);
         userInfoShowScrollView.setVisibility(View.GONE);
-        GitHubApiService gitHubApiService = new NetworkCall();
+        GitHubApiService gitHubApiService = new NetworkCallMock();
         gitHubApiService.getUser(userIdEditText.getText().toString(), this);
     }
 

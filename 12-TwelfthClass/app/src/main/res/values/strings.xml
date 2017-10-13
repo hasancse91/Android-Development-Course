@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">12-TwelfthClass</string>
+    <string name="name">Student Name</string>
+    <string name="registration">Registration No.</string>
+    <string name="phone">Phone No.</string>
+    <string name="email">Email</string>
+    <string name="create_student_button">Create Student</string>
+    <string name="number_of_student">Number of Student: </string>
+    <string name="search_button_text">Search</string>
+</resources>

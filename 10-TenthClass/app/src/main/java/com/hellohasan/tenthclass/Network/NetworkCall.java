@@ -22,8 +22,9 @@ public class NetworkCall implements GitHubApiService {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
                 Logger.d(response.raw());
+                User user = response.body();
                 if(response.code()==200)
-                    callback.onSuccess(response.body());
+                    callback.onSuccess(user);
                 else
                     callback.onError(new Exception(response.message()));
             }

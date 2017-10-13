@@ -122,3 +122,14 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 - [Android SQLite Database Tutorial - AndroidHive](https://www.androidhive.info/2011/11/android-sqlite-database-tutorial/)
 - [Git branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 - [gitignore in Android Studio](https://stackoverflow.com/a/17803964/6200296)
+
+### [Class: 12](https://github.com/hasancse91/Android-Development-Course/tree/master/12-TwelfthClass)
+- SQLite Database implementation with abstraction layer
+	- Create Database
+	- Create Table
+	- Write a record (row) into table
+	- Read all records from table
+	- Count the number of row in table
+	- Search a student by his registration number
+
+No concrete implementation for database query. I implement here an abstraction layer for query. Activity class just call a method of an `interface` and implement a `callback` for query result.
