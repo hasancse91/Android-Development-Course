@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">13-ThirteenthClass</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_student_fragment">Add Student Fragment</string>
+
+    <string name="name">Student Name</string>
+    <string name="registration">Registration No.</string>
+    <string name="phone">Phone No.</string>
+    <string name="email">Email</string>
+    <string name="create_student_button">Create Student</string>
+    <string name="number_of_student">Number of Student: </string>
+    <string name="search_button_text">Search</string>
+    <string name="add_student">Add Student</string>
+    <string name="add_student_tag">add_student</string>
+    <string name="student_list">Student List</string>
+    <string name="student_search">Search Student</string>
+    <string name="student_list_tag">student_list</string>
+    <string name="student_search_tag">student_search</string>
+    <string name="app_description">Student Management System</string>
+    <string name="no_student_found">No student found in database</string>
+    <string name="student_not_delete">Student cannot be deleted</string>
+
+</resources>

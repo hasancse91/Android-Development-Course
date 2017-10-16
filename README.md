@@ -133,3 +133,14 @@ I'm taking an onsite course on Android App Development at Dhaka, Bangladesh (see
 	- Search a student by his registration number
 
 No concrete implementation for database query. I implement here an abstraction layer for query. Activity class just call a method of an `interface` and implement a `callback` for query result.
+
+### [Class: 13](https://github.com/hasancse91/Android-Development-Course/tree/master/13-ThirteenthClass)
+- `Fragment`
+- SQLite Database implementation with abstraction layer
+	- Create Database
+	- Create Table
+	- Write a record (row) into table
+	- Read all records from `student` table and show in a `RecyclerView`
+	- Count the number of row in table
+	- Search a student by his registration number
+	- Delete a student by his registration number

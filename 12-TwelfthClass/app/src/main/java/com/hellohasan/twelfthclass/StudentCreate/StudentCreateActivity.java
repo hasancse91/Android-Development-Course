@@ -1,8 +1,10 @@
 package com.hellohasan.twelfthclass.StudentCreate;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -74,8 +76,10 @@ public class StudentCreateActivity extends AppCompatActivity {
 
 
     @OnClick(R.id.addStudentButton)
-    public void createStudent() {
+    public void createStudent(View view) {
+        hideKeyboard(view);
         studentCreateErrorMessage.setVisibility(View.GONE);
+        searchErrorTextView.setVisibility(View.GONE);
 
         String name = nameEditText.getText().toString();
         long registrationNo = Integer.parseInt(registrationEditText.getText().toString());
@@ -129,7 +133,9 @@ public class StudentCreateActivity extends AppCompatActivity {
 
 
     @OnClick(R.id.searchButton)
-    public void searchStudentByRegNo(){
+    public void searchStudentByRegNo(View view){
+        hideKeyboard(view);
+        studentCreateErrorMessage.setVisibility(View.GONE);
         searchErrorTextView.setVisibility(View.GONE);
         long registrationNo = Integer.parseInt(searchEditText.getText().toString());
         databaseQueryInterface.getStudentByRegistrationNo(registrationNo, this, new DatabaseQueryCallback<Student>() {
@@ -152,5 +158,10 @@ public class StudentCreateActivity extends AppCompatActivity {
                 emailTextView.setText("");
             }
         });
+    }
+
+    private void hideKeyboard(View view){
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 }

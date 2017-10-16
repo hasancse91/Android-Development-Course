@@ -1,4 +1,4 @@
-package com.hellohasan.twelfthclass.Database;
+package com.hellohasan.thirtheenthclass.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.widget.Toast;
 
-import com.hellohasan.twelfthclass.Config;
-import com.hellohasan.twelfthclass.StudentCreate.Student;
+import com.hellohasan.thirtheenthclass.Config;
+import com.hellohasan.thirtheenthclass.Student;
 import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
@@ -124,6 +124,30 @@ public class DatabaseQuery implements DatabaseQueryInterface {
         } finally {
             if(cursor!=null)
                 cursor.close();
+            sqLiteDatabase.close();
+        }
+
+    }
+
+    @Override
+    public void deleteStudentByRegistrationNo(long registrationNo, Context context, DatabaseQueryCallback<Boolean> callback) {
+
+        DatabaseHelper databaseHelper = DatabaseHelper.getInstance(context);
+        SQLiteDatabase sqLiteDatabase = databaseHelper.getWritableDatabase();
+
+        try {
+            int count = sqLiteDatabase.delete(Config.TABLE_STUDENT,
+                                                Config.COLUMN_STUDENT_REGISTRATION + " = ? ",
+                                                new String[] {String.valueOf(registrationNo)});
+            if(count>0)
+                callback.onSuccessQuery(true);
+            else
+                callback.onSuccessQuery(false);
+
+        } catch (SQLiteException e){
+            callback.onErrorQuery(e);
+
+        } finally {
             sqLiteDatabase.close();
         }
 
