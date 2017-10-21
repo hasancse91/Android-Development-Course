@@ -148,7 +148,7 @@ No concrete implementation for database query. I implement here an abstraction l
 ### [Class: 14](https://github.com/hasancse91/Android-Development-Course/tree/master/14-FourteenthClass)
 - SQLite Database implementation with abstraction layer
 	- Create Database
-	- Create two tables and create relationship using `Foreign Key`
+	- Create two tables and make relationship using `Foreign Key`
 	- `ON CASCADE DELETE` implementation
 	- Insert operation
 	- Read operation

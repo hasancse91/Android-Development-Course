@@ -4,7 +4,7 @@ Date: 20 October, 2017
 ## Topics ##
 - SQLite Database implementation with abstraction layer
 	- Create Database
-	- Create two tables and create relationship using `Foreign Key`
+	- Create two tables and make relationship using `Foreign Key`
 	- `ON CASCADE DELETE` implementation
 	- Insert operation
 	- Read operation
