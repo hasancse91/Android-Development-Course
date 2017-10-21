@@ -8,9 +8,13 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
+
 public class Notification {
 
     public static void createNotification(String title, String message, String activity, int notificationId, Context context) throws ClassNotFoundException {
+
         Intent intent = new Intent(context, Class.forName(activity));
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 //        int requestCode = 0;
@@ -27,5 +31,8 @@ public class Notification {
 
         NotificationManager notificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(notificationId, noBuilder.build()); //0 = ID of notification
+
+        Logger.addLogAdapter(new AndroidLogAdapter());
+        Logger.d("Notification created");
     }
 }

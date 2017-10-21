@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">15-FifteenthClass</string>
+    <string name="second_activity">This is second Activity</string>
 </resources>

@@ -144,3 +144,22 @@ No concrete implementation for database query. I implement here an abstraction l
 	- Count the number of row in table
 	- Search a student by his registration number
 	- Delete a student by his registration number
+
+### [Class: 14](https://github.com/hasancse91/Android-Development-Course/tree/master/14-FourteenthClass)
+- SQLite Database implementation with abstraction layer
+	- Create Database
+	- Create two tables and create relationship using `Foreign Key`
+	- `ON CASCADE DELETE` implementation
+	- Insert operation
+	- Read operation
+	- Update operation
+	- Delete operation
+	- Count table row
+- `DialogFragment` implementation
+
+### [Class: 15](https://github.com/hasancse91/Android-Development-Course/tree/master/15-FifteenthClass)
+- In App `Notification`
+- `ProGuard` to prevent reverse engineering of APK
+
+**Resources:**
+- [Bengali Blog post on ProGuard](https://hellohasan.com/2017/07/12/prevent-android-app-decompile-proguard-rules/)
