@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">14-FourteenthClass</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_create_subject">Subjects</string>
+
+    <string name="name">Name</string>
+    <string name="registration_no">Registration No</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="cross_image_content_description">Delete student from SQLite database</string>
+    <string name="empty_student_list_message">Student List is Empty!</string>
+    <string name="student_info">Student Information</string>
+    <string name="update_button">Update</string>
+    <string name="subject_info">Subject Information</string>
+    <string name="no_subject_found">This student has no subject yet!</string>
+    <string name="subject_code">Subject Code</string>
+    <string name="subject_credit">Credit</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_button">Create</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="student_count">Student Count</string>
+    <string name="subject_count">Subject Count</string>
+
+</resources>

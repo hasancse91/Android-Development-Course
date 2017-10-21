@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/item_background"
+    android:layout_marginTop="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:text="Data Structures"/>
+
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_black_24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:alpha="0.45"/>
+
+    <TextView
+        android:id="@+id/subCodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/subjectName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/subject_code"/>
+
+    <TextView
+        android:id="@+id/subjectCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/subjectName"
+        app:layout_constraintLeft_toRightOf="@+id/subCodeTitle"
+        tools:text="102"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/creditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/subjectCode"
+        android:text="@string/subject_credit"/>
+
+    <TextView
+        android:id="@+id/creditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3"
+        app:layout_constraintTop_toBottomOf="@id/subjectCode"
+        app:layout_constraintLeft_toRightOf="@id/creditTitle"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
