@@ -50,7 +50,7 @@ public class DatabaseQuery implements DatabaseQueryInterface{
         DatabaseHelper databaseHelper = DatabaseHelper.getInstance(context);
         SQLiteDatabase sqLiteDatabase = databaseHelper.getReadableDatabase();
 
-        String SELECT_QUERY = String.format("SELECT %s, %s, %s, %s FROM %s", Config.COLUMN_STUDENT_NAME, Config.COLUMN_SUBJECT_OF_STUDENT_REGISTRATION, Config.COLUMN_STUDENT_EMAIL, Config.COLUMN_STUDENT_PHONE, Config.TABLE_STUDENT);
+        String SELECT_QUERY = String.format("SELECT %s, %s, %s, %s FROM %s", Config.COLUMN_STUDENT_NAME, Config.COLUMN_STUDENT_REGISTRATION, Config.COLUMN_STUDENT_EMAIL, Config.COLUMN_STUDENT_PHONE, Config.TABLE_STUDENT);
         Cursor cursor = null;
         try {
             cursor = sqLiteDatabase.rawQuery(SELECT_QUERY, null);
