@@ -92,7 +92,6 @@ public class LocationService extends Service {
                         Toast.makeText(getApplicationContext(), "GPS not found", Toast.LENGTH_SHORT).show();
                     }
 
-
                 }
 
             });
@@ -113,6 +112,7 @@ public class LocationService extends Service {
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
             Logger.d("Location permission issue");
+            Toast.makeText(getApplicationContext(), "Location permission denied", Toast.LENGTH_SHORT).show();
             return;
         }
 
