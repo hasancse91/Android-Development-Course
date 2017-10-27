@@ -163,3 +163,11 @@ No concrete implementation for database query. I implement here an abstraction l
 
 **Resources:**
 - [Bengali Blog post on ProGuard](https://hellohasan.com/2017/07/12/prevent-android-app-decompile-proguard-rules/)
+
+### [Class: 16](https://github.com/hasancse91/Android-Development-Course/tree/master/16-SixteenthClass)
+- Show Google Map using `SupportMapFragment`
+- Show user's current location on Map
+
+### [Class: 17](https://github.com/hasancse91/Android-Development-Course/tree/master/17-SeventeenthClass)
+- `Service` - to do any task in background
+- Get user's current location (Latitude and Longitude) from GPS using `SmartLocation` library
