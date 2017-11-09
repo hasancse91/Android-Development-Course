@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1099480420372",
+    "firebase_url": "https://eighteenthclass.firebaseio.com",
+    "project_id": "eighteenthclass",
+    "storage_bucket": "eighteenthclass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099480420372:android:89a56acbcd577a3b",
+        "android_client_info": {
+          "package_name": "com.hellohasan.eighteenthclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1099480420372-ngf4ah218jf5va59e3fp3rd5lrleagsm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hellohasan.eighteenthclass",
+            "certificate_hash": "98230d86742fd1832ab3d5514caf60802ce141f1"
+          }
+        },
+        {
+          "client_id": "1099480420372-8b3f1rldifs0605rlvhpphqd03jb83r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnlRh6J45H3uw4gIKDUNJOmWIpwXdcwRM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1099480420372-8b3f1rldifs0605rlvhpphqd03jb83r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
