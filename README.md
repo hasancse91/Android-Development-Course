@@ -171,3 +171,12 @@ No concrete implementation for database query. I implement here an abstraction l
 ### [Class: 17](https://github.com/hasancse91/Android-Development-Course/tree/master/17-SeventeenthClass)
 - `Service` - to do any task in background
 - Get user's current location (Latitude and Longitude) from GPS using `SmartLocation` library
+
+### [Class: 18](https://github.com/hasancse91/Android-Development-Course/tree/master/18-EighteenthClass)
+- `Firebase Analytics`
+- `Firebase Crashlytics`
+- `EventBus` Library
+
+### [Class: 19](https://github.com/hasancse91/Android-Development-Course/tree/master/19-NineteenthClass)
+- Audio Player
+- Service

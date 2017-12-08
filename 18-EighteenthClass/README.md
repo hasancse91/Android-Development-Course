@@ -2,5 +2,6 @@
 Date: 10 November, 2017
 
 ## Topics ##
-
-Coming soon...
+- `Firebase Analytics`
+- `Firebase Crashlytics`
+- `EventBus` Library

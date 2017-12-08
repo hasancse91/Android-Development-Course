@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "706935194694",
+    "firebase_url": "https://nineteenthclass.firebaseio.com",
+    "project_id": "nineteenthclass",
+    "storage_bucket": "nineteenthclass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706935194694:android:d3cf1b8a154cc47c",
+        "android_client_info": {
+          "package_name": "com.hellohasan.nineteenthclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706935194694-nv907qin7ktknvajm7mkg04lokpbk7s5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hellohasan.nineteenthclass",
+            "certificate_hash": "0166a8c2c5b2f4a203031d091b64f207e57a8032"
+          }
+        },
+        {
+          "client_id": "706935194694-tamugmva0kcv06tto2nfu1crllmqkh92.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkMQUO--Jc4VLarKjjbI73l2Sc_4I9ayw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706935194694-tamugmva0kcv06tto2nfu1crllmqkh92.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

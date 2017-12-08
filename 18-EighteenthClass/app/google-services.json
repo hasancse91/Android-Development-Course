@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1099480420372-qc6vvo01gmk8mglrl7na6v5vnq9eg01e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hellohasan.eighteenthclass",
+            "certificate_hash": "0166a8c2c5b2f4a203031d091b64f207e57a8032"
+          }
+        },
+        {
           "client_id": "1099480420372-ngf4ah218jf5va59e3fp3rd5lrleagsm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
